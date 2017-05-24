@@ -1,0 +1,42 @@
+[
+	{
+		"id":1,
+		"text":"营销管理"
+	},
+	{
+		"id":2,
+		"text":"客户管理"
+	},
+	{
+		"id":3,
+		"text":"系统管理",
+		"children":[
+			{
+				"id":31,
+				"text":"员工管理",
+				"attributes":{"url":"/employee.do"}
+				
+			},{
+				"id":32,
+				"text":"部门管理",
+				"attributes":{"url":"/department.do"}
+			},{
+				"id":33,
+				"text":"角色管理",
+				"attributes":{"url":"/role.do"}
+			},{
+				"id":34,
+				"text":"文章管理",
+				"attributes":{"url":"/department.do"}
+			}
+		]
+	},
+	{
+		"id":4,
+		"text":"订单合同管理"
+	},
+	{
+		"id":5,
+		"text":"售后管理"
+	}
+]

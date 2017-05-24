@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.xmg.crm.domain">
+	
+	<class name="Log">
+		<id name="id">
+			<generator class="native"/>
+		</id>
+		<property name="date" type="timestamp"/>
+		<property name="operation"/>
+		<!-- 操作人 -->
+		<many-to-one name="operator" column="emp_id"/>
+	</class>
+</hibernate-mapping>
